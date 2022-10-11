@@ -14,6 +14,15 @@ cd getnet-voucher-pool
 mvn package -Dmaven.test.skip 
 docker-compose up     
 ```
+## Rodar os testes unitários
+
+Para rodar os testes é necessários configurar a propriedade :
+**spring.data.mongodb.host**
+dentro do arquivo **application.properties** para localhost e subir um mongoDb
+```sh
+docker run -d -p 27017:27017 --name getnet-mongodb mongo:6.0.2   
+```
+
 ## Endpoints publicos
 
 Interface do Swagger
