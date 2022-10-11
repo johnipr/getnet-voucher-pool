@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  api_service:
+      image: "johnipr/getnet-voucher-pool:latest"
+#      build: .
+      restart: always
+      ports:
+        - 8080:8080
+      depends_on:
+        - mongo_db
+      expose:
+        - 8080
+  mongo_db:
+    image: "mongo:6.0.2"
+    restart: always
+    ports:
+      - 27017:27017
+    expose:
+        - 27017
