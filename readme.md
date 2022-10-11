@@ -29,6 +29,7 @@ Interface do Swagger
 http://localhost:8080/api/swagger-ui/index.html
 
 Cadastrar Cliente
+
 **POST /api/signup**
 ```sh
 {
@@ -39,6 +40,7 @@ Cadastrar Cliente
 ```
 
 Logar para receber bearer token para as demais requisições
+
 **POST /api/signup**
 ```sh
 {
@@ -47,10 +49,13 @@ Logar para receber bearer token para as demais requisições
 }
 ```
 ## Endpoints privados
-Todos os endpoints privados precisam do Header Authorization nesse formato : 
-[ **Bearer eyJhbGciOiJIUzUxMiJ9.eyJ...g0fQ.mg_emI...IAENA** ]
+Todos os endpoints privados precisam do Header Authorization nesse formato :
+
+[ Bearer eyJhbGciOiJIUzUxMiJ9.eyJ...g0fQ.mg_emI...IAENA ]
+
 
 Logar para receber bearer token para as demais requisições
+
 **POST api/offers**
 ```sh
 {
@@ -60,7 +65,9 @@ Logar para receber bearer token para as demais requisições
 }
 ```
 
+
 Resgata um voucher se ele for válido
+
 **POST /api/vouchers/redeem**
 ```sh
 {
@@ -69,18 +76,25 @@ Resgata um voucher se ele for válido
 }
 ```
 
+
 Busca todos os vouchers válidos de um determinado email
+
 **GET /api/vouchers/email/{email}**
 ```sh
 
 ```
+
+
 Busca um voucher pelo seu código unico 
+
 **GET /api/vouchers/{code}**
 ```sh
 
 ```
 
+
 Busca todos os vouchers 
+
 **GET /api/vouchers**
 ```sh
 
