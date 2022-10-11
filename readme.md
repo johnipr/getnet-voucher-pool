@@ -6,6 +6,9 @@ Este projeto faz parte de um processo seletivo onde foi solicitado o desenvolvim
 
 ## Instalação com docker
 
+Por padrão a aplicação poderá ser acessada na seguinte url:
+http://localhost:8080
+
 ```sh
 cd getnet-voucher-pool
 mvn package -Dmaven.test.skip 
@@ -14,11 +17,7 @@ docker-compose up
 ## Endpoints publicos
 
 Interface do Swagger
-**GET /api/swagger-ui/index.html**
-
-```sh
-
-```
+http://localhost:8080/api/swagger-ui/index.html
 
 Cadastrar Cliente
 **POST /api/signup**
