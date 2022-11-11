@@ -1,5 +1,4 @@
-{
-    "movies" : [
+ [
         {
             "id": 1,
             : "The Ghost and the Darkness",
@@ -110,5 +109,4 @@
             "name": "The Amityville Horror",
             "releaseYear": 1979
         }
-    ]
-}
+   ]
